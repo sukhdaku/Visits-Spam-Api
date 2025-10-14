@@ -1,0 +1,7 @@
+pycryptodome
+Flask[async]
+requests
+python-dotenv
+pymongo
+aiohttp
+protobuf
