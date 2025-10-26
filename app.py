@@ -12,7 +12,7 @@ from config import REGION_CONFIG,DB_NAME,MONGO_URI,MAX_USAGE
 app = Flask(__name__)
 
 client = MongoClient(MONGO_URI)
-db = client[DB_NAME]
+db = client[bot_xpert]
 
 
 def fetch_tokens(region):
@@ -222,4 +222,5 @@ def send_visits():
     return jsonify({"error": "Could not decode player information"}), 500
 
 if __name__ == "__main__":
+
     app.run(debug=True, host="0.0.0.0", port=5001)
