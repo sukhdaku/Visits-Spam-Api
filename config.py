@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 MAX_USAGE=25
-DB_NAME = "spam_xpert"
+DB_NAME = "spamtokens_db"
 MONGO_URI = os.getenv("MONGO_URI") 
 BASE_URLS = {
     "IND": "https://client.ind.freefiremobile.com",
