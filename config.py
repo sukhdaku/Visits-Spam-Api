@@ -2,8 +2,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-MAX_USAGE=25
-DB_NAME = "spamtokens_db"
+MAX_USAGE=50
+DB_NAME = "spam_xpert"
 MONGO_URI = os.getenv("MONGO_URI") 
 BASE_URLS = {
     "IND": "https://client.ind.freefiremobile.com",
@@ -11,6 +11,10 @@ BASE_URLS = {
     "ME":  "https://clientbp.ggblueshark.com",
     "BD":  "https://clientbp.ggblueshark.com",
     "PK":  "https://clientbp.ggblueshark.com",
+    "EUROPE":"https://clientbp.ggblueshark.com",
+
+     "VN":"https://clientbp.ggblueshark.com",
+     "SG":"https://clientbp.ggblueshark.com",
 }
 
 REGION_CONFIG = {
@@ -21,3 +25,6 @@ REGION_CONFIG = {
     }
     for region, base in BASE_URLS.items()
 }
+
+
+
